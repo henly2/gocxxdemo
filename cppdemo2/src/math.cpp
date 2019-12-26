@@ -23,3 +23,14 @@ int add(int a, int b)
     return add.Do(a, b);
 }
 
+static int s_cc = 0;
+int dosomething(int* cc)
+{
+    if(++s_cc % 2 == 0)
+    {
+        *cc = 0;
+        return 0;
+    }
+
+    return 1;
+}

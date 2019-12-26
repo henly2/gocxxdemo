@@ -6,6 +6,7 @@ extern "C" {
 #endif
 
 int add(int a, int b);
+int dosomething(int* cc);
 
 #ifdef __cplusplus
 }

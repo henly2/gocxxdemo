@@ -7,7 +7,9 @@ package main
 */
 import "C"
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main(){
 	fmt.Println("I am go!")

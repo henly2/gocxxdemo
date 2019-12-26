@@ -14,4 +14,14 @@ func main(){
 	a := C.add(1, 2)
 
 	fmt.Println("return from c/c++ = ", a)
+
+	var cc C.int
+	b := C.dosomething(&cc)
+	fmt.Println(b, cc)
+
+	b = C.dosomething(&cc)
+	fmt.Println(b, cc)
+
+	b = C.dosomething(&cc)
+	fmt.Println(b, cc)
 }
